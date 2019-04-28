@@ -24,7 +24,7 @@ The source for this project is located [here](https://github.com/rr2674/item_cat
   - From the _**Amazon Lightsail**_ portal, select the Instance 'Manage' option (inline dot's right side of instance image)
   ![Instance](Instance.png)
   - From the instance menu, choose 'Networking' to reveal firewall configuration.  Add Custom options as seen below:
-  ![Firewall](firewall.png)
+  ![Firewall](Firewall.png)
 
 #### User grader Setup:
 As Ubuntu user (via Lightsail terminal access to instance)
