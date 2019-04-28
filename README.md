@@ -9,8 +9,8 @@ The source for this project is located [here](https://github.com/rr2674/item_cat
 ## VM Details
 - Linux Distribution Description:	Ubuntu 16.04.6 LTS
 - Managed by user `grader` via port 2200, RSA key only:
- - `ssh grader@35.182.174.150 -p 2200 -i <YOUR PATH HERE>/.ssh/grader`
- - User `grader` has been granted `sudo` access
+  - `ssh grader@35.182.174.150 -p 2200 -i <YOUR PATH HERE>/.ssh/grader`
+- User `grader` has been granted `sudo` access
 - `NTP` port 123 is also open
 
 #### Firewall Setup:
@@ -24,8 +24,7 @@ The source for this project is located [here](https://github.com/rr2674/item_cat
   - From the _**Amazon Lightsail**_ portal, select the Instance 'Manage' option (inline dot's right side of instance image)
   ![Instance](Instance.png)
   - From the instance menu, choose 'Networking' to reveal firewall configuration.  Add Custom options as seen below:
-  ![Firewall](Firewall.png)
-
+  ![Firewall](firewall.png)
 #### User grader Setup:
 As Ubuntu user (via Lightsail terminal access to instance)
 - Create keys via:
