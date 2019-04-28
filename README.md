@@ -24,13 +24,13 @@ The source for this project is located [here](https://github.com/rr2674/item_cat
   - From the _**Amazon Lightsail**_ portal, select the Instance 'Manage' option (inline dot's right side of instance image)
   ![Instance](Instance.png)
   - From the instance menu, choose 'Networking' to reveal firewall configuration.  Add Custom options as seen below:
-  ![Firewall](Firewall.png)
+  ![Firewall](firewall.png)
 
 #### User grader Setup:
 As Ubuntu user (via Lightsail terminal access to instance)
 - Create keys via:
   - `ssh-keygen`
-- Create `grader` user: 
+- Create `grader` user:
   - `sudo adduser grader`
 - Create .ssh directory and store public key for `grader`:
   - `sudo mkdir /home/grader/.ssh`
