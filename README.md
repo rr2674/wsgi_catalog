@@ -22,9 +22,13 @@ The source for this project is located [here](https://github.com/rr2674/item_cat
   - `sudo ufw enable`
 - Provider side:
   - From the _**Amazon Lightsail**_ portal, select the Instance 'Manage' option (inline dot's right side of instance image)
+
   ![Instance](Instance.png)
+
   - From the instance menu, choose 'Networking' to reveal firewall configuration.  Add Custom options as seen below:
+
   ![Firewall](firewall.png)
+
 #### User grader Setup:
 As Ubuntu user (via Lightsail terminal access to instance)
 - Create keys via:
@@ -38,18 +42,20 @@ As Ubuntu user (via Lightsail terminal access to instance)
   - `sudo chmod 700 /home/grader/.ssh`
   - `sudo chmod 644 /home/grader/.ssh/authorized_keys`
 
-
 #### Software Packages Installed:
 - `sudo apt-get install apache2`
 - `sudo apt-get install libapache2-mod-wsgi`
 - `sudo apt-get install virtualenv`
 - `sudo apt-get install postgresql`
 - `sudo apt-get install python-pip`
+
 #### Software Package Configurations:
+
 - postgres server setup:
  - `sudo su - postgres`
  - `createuser -dRSP catalog`
  - `createdb catalog`
+
 - apache2 setup:
  - Make a directory for the application:
    - `sudo mkdir /var/www/flask-prod`
