@@ -20,6 +20,7 @@ The source for this project is located [here](https://github.com/rr2674/item_cat
   - `sudo ufw allow 2200/tcp`
   - `sudo ufw allow www`
   - `sudo ufw enable`
+  - `sudo ufw delete allow ssh`
 - Provider side:
   - From the _**Amazon Lightsail**_ portal, select the Instance 'Manage' option (inline dot's right side of instance image)
 
@@ -50,6 +51,11 @@ As Ubuntu user (via Lightsail terminal access to instance)
 - `sudo apt-get install python-pip`
 
 #### Software Package Configurations:
+
+- sshd configuration change:
+ - explicitly disable root login
+   - `sudo vi /etc/ssh/sshd_config`
+   - find PermitRootLogin and set to `PermitRootLogin no`
 
 - postgres server setup:
  - `sudo su - postgres`
@@ -97,3 +103,8 @@ As Ubuntu user (via Lightsail terminal access to instance)
  ```
  - Restart apache2
    - `sudo service apache2 restart`
+
+#### Ensure all Linux packages are up to date
+
+- `sudo apt-get update`
+- `sudo apt-get upgrade`
